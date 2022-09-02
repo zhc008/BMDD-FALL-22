@@ -20,7 +20,7 @@ At the beginning, each patient is assigned to a spot randomly. If every patient 
 
 The auction process will terminate in finite number of rounds. Once a patient has bid for a spot, he would not voluntarily give up the spot because the price of other spots only increase and thus his spot remains the largest profit to him. He would only lost his spot if someone has bid for it with a higher price. Thus he would only receive a spot that has never been bid before. If all spots have been bid, then the auction ends. Also notice in each round of auction, the price increase with a minimum of $\epsilon$. For sufficiently large rounds of bid, the spot should be expensive enough, which makes those never bid spot most profitable to some patients. Thus all spots will receive at least one bid, and the auction will terminate eventually.
 
-## Time Complexity and Optimality
+## Optimality and Time Complexity
 
 Optimality of auction algorithm is garenteed as long as $n\epsilon \le 1$. Particularly our assignment is within $n\epsilon$ of being optimal. As every doctor-to-patient value $a_{ij}$ is integer, thus it garentees the optimal assignment result.
 
